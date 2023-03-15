@@ -10,7 +10,6 @@ function readStream(path){  // Функція, яка читає текстов�
 }
 
 function countwordsStream(path){  // Функція, яка рахує кількість слів в файлі
-    const amount = 0;
     const reader = fs.createReadStream(path)
     reader.on('data', function (chunk){
         console.log(chunk.toString().split(" ").length)
